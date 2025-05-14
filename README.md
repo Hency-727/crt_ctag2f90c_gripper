@@ -1,7 +1,7 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-15 02:37:15
+ * @LastEditTime: 2025-05-15 02:40:50
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
@@ -38,7 +38,6 @@ This repository provides a complete ROS interface for the **ZHIXING Gripper**, f
 | [zhixing_gripper_ros](https://github.com/Hency-727/crt_ctag2f90c_gripper/blob/main/src/crt_ctag2f90c_gripper_visualization/scripts/GUI2Robot_90.py)  | ROS node for gripper control                |
 | `modbus_interface/`     | Python/C++ interface via minimalmodbus      |
 | [urdf](https://github.com/Hency-727/crt_ctag2f90c_gripper/tree/main/src/ctag2f90c_moveit_config/config/gazebo_full_model.urdf)                 | Gripper robot description (URDF)      |
-https://github.com/Hency-727/crt_ctag2f90c_gripper/blob/main/src/crt_ctag2f90c_gripper_visualization/scripts/GUI2Robot_90.py
 ---
 
 ## 🚀 Getting Started
