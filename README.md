@@ -1,7 +1,7 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-15 02:40:50
+ * @LastEditTime: 2025-05-15 02:54:07
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
@@ -62,9 +62,9 @@ Run:
 cd crt_ctag2f90c_gripper && catkin_make
 ```
 
-Check plugins: 
+Check plugin: 
 ```bash
-[ -f ~/devel/lib/crt_ctag2f90c_gripper/libgripper_controller.so ] || wget https://github.com/Hency-727/crt_ctag2f90c_gripper/raw/main/libgripper_controller.so
+[ -f ./devel/lib/libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so ] || wget -o ./devel/lib/libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so https://github.com/Hency-727/crt_ctag2f90c_gripper/raw/main/libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so
 ```
 
 ```bash
