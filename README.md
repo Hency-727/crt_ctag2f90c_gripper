@@ -1,7 +1,7 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-15 01:47:59
+ * @LastEditTime: 2025-05-15 02:21:56
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
@@ -46,14 +46,14 @@ src/
 
 ### Prerequisites
 
-- ROS Noetic with gazebo-11 (specify your ROS version)
-- Python 3
+- ROS Noetic with gazebo-11.15.1 (specify your ROS version)
+- Python 3.8
 - [minimalmodbus](https://github.com/pyhys/minimalmodbus)
 
 Install dependencies:
 
 ```bash
-sudo apt install ros-${ROS_DISTRO}-moveit
+sudo apt install ros-${ROS_DISTRO}-moveit ros-${ROS_DISTRO}-position-controllers ros-${ROS_DISTRO}-effort-controllers
 pip install minimalmodbus
 git clone https://github.com/Hency-727/crt_ctag2f90c_gripper/
 ```
@@ -62,8 +62,20 @@ Run:
 
 ```bash
 cd crt_ctag2f90c_gripper && catkin_make
+```
 
-roslaunch gripper_moveit_config demo_gazebo.launch # open gazebo model and check in the rviz
+Check plugins: 
+```bash
+[ -f ~/devel/lib/crt_ctag2f90c_gripper/libgripper_controller.so ] || wget https://github.com/Hency-727/crt_ctag2f90c_gripper/raw/main/libgripper_controller.so
+```
+
+```bash
+echo "source $(pwd)/devel/setup.bash" >> ~/.bashrc && source ~/.bashrc
+```
+
+Open gazebo model and check in the rviz:
+```bash
+roslaunch gripper_moveit_config demo_gazebo.launch 
 ```
 Control the gripper by using the python script:
 ```bash
