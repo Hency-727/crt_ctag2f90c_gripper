@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /home/hello/crt_ctag2f90c_gripper/src/ctag2f90c_urdf.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/full_model.srdf
+  CONFIG:
+    author_name: hency
+    author_email: hency@gmail.com
+    generated_timestamp: 1747138702

@@ -1,0 +1,11 @@
+build/
+devel/
+install/
+logs/
+*.pyc
+*.swp
+*.swo
+.DS_Store
+*.log
+.env
+backup/

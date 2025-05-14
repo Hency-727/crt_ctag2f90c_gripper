@@ -1,0 +1,23 @@
+gripper_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - Left_1_Joint
+  gains:
+    Left_1_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+      
+gazebo_ros_control:
+  pid_gains:
+        Left_1_Joint: {p: 100.0, i: 0.0, d: 0.00}
+        Right_1_Joint: {p: 100.0, i: 0.0, d: 0.00} 
+        Right_2_Joint: {p: 100.0, i: 0.0, d: 0.01} 
+        Left_2_Joint: {p: 100.0, i: 0.0, d: 0.01} 
+        Left_up_Joint: {p: 0.5, i: 0.0, d: 0.001} 
+        Right_up_Joint: {p: 0.5, i: 0.0, d: 0.001} 
+        Left_in_Joint: {p: 0.5, i: 0.0, d: 0.001} 
+        Right_in_Joint: {p: 0.5, i: 0.0, d: 0.001}       
+      
+      
