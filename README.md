@@ -1,16 +1,15 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-15 02:25:30
+ * @LastEditTime: 2025-05-15 02:29:23
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
  * @Email: hengxiangchen428@gamil.com
- * 可以输入预定的版权声明、个性签名、空行等
 -->
 # crt_ctag2f90c_gripper
 
-This repository provides a complete ROS interface for the **ZHIXING Gripper**, featuring a **position controller based on force and torque**. This repo includes configuration files for MoveIt!, ROS communication interfaces, and a `minimalmodbus`-based hardware communication layer.
+This repository provides a complete ROS interface for the **ZHIXING Gripper**, featuring a **position controller based on force and torque**. This repo includes configuration files for `MoveIt!`, `ROS` communication interfaces, and a `minimalmodbus`-based hardware communication layer.
 
 ---
 
