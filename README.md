@@ -1,7 +1,7 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-15 02:21:56
+ * @LastEditTime: 2025-05-15 02:24:26
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
@@ -29,7 +29,7 @@ This repository provides a complete ROS interface for the **ZHIXING Gripper**, f
   Communicates with the gripper hardware over Modbus RTU protocol.
 
 ---
-src/
+
 ## 📦 Package Contents
 
 | Folder / File           | Description                                 |
@@ -79,7 +79,7 @@ roslaunch gripper_moveit_config demo_gazebo.launch
 ```
 Control the gripper by using the python script:
 ```bash
-rosrun crt_ctag2f90c_gripper_visualization GUI2Robot_90.py
+python src/crt_ctag2f90c_gripper_visualization/scripts/GUI2Robot_90.py
 ``` 
 Use GUI to control the gripper:
 ```bash
