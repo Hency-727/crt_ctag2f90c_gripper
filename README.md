@@ -1,7 +1,7 @@
 <!--
  * @Author: HencyCHEN
  * @Date: 2025-05-15 01:27:03
- * @LastEditTime: 2025-05-20 02:02:19
+ * @LastEditTime: 2025-05-23 10:00:53
  * @LastEditors: HencyCHEN
  * @Description: 
  * @FilePath: /crt_ctag2f90c_gripper/README.md
@@ -64,7 +64,11 @@ cd crt_ctag2f90c_gripper && catkin_make
 ```bash
 echo "source $(pwd)/devel/setup.bash" >> ~/.bashrc && source ~/.bashrc
 ```
-
+Use the NVIDIA GPU for graphics rendering and OpenGL:
+```bash
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+```
 Open gazebo model and check in the rviz:
 ```bash
 roslaunch gripper_moveit_config demo_gazebo.launch 
